@@ -3,14 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: nowrap;
-  font-size: 1.3rem;
+  z-index: 10;
 }
 
 .menu__list {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.3rem;
+  align-items: baseline;
+}
+
+.menu__item {
   margin: 0 10px;
 }
