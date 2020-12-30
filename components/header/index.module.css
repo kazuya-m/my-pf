@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 1.3rem;
+}
+
+.menu__list {
+  margin: 0 10px;
+}
