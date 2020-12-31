@@ -1,0 +1,15 @@
+.img {
+  width: 400px;
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  columns: 2;
+  justify-content: space-evenly;
+}
+
+.works__item {
+  width: 40%;
+  margin-bottom: 3rem;
+}
