@@ -6,7 +6,7 @@ export function Header() {
     <header className={styles.header}>
       <div className="header-left">
         <Link href="/">
-          <a><h1>Kazuya Matuso</h1></a>
+          <a><h1>Kazuya Matsuo</h1></a>
         </Link>
       </div>
       <div className={styles.header__menu}>
