@@ -4,11 +4,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: baseline;
   position: fixed;
   top: 0;
   z-index: 10;
   background-color: #fff;
-  padding: 0 10rem;
+  padding: 1em 10rem;
   opacity: 0.9;
   font-size: 1rem;
 }
@@ -16,8 +17,9 @@
 .menu__list {
   display: flex;
   flex-wrap: nowrap;
-  font-size: 1.2rem;
-  align-items: baseline;
+  font-size: 1rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .menu__item {
