@@ -1,17 +1,21 @@
 .header {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: #fff;
+  padding: 0 10rem;
+  opacity: 0.9;
+  font-size: 1rem;
 }
 
 .menu__list {
   display: flex;
   flex-wrap: nowrap;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   align-items: baseline;
 }
 

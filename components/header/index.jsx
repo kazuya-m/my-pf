@@ -11,12 +11,16 @@ export function Header() {
       </div>
       <div className={styles.header__menu}>
         <ul className={styles.menu__list}>
-          <li className={styles.menu__item}>Profile</li>
-          <li className={styles.menu__item}>Works</li>
-          <li className={styles.menu__item}>Contact</li>
+          <li className={styles.menu__item}>
+            <Link href={`/contact`}>
+              <a>
+                Contact
+              </a>
+            </Link>
+            </li>
           <li className={styles.menu__item}>
             <a href="https://github.com/kazuya-m" target="_blank" rel="noopener noreferrer">
-            <img src="/skills/github.svg" alt="GitHub Logo" className="logo" />
+              <img src="/skills/github.svg" alt="GitHub Logo" className="logo" />
             </a>
           </li>
         </ul>
