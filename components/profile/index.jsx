@@ -6,21 +6,24 @@ import { SkillCard } from '../skillCard'
 export function Profile() {
   const aboutme = 'aboutme';
   const skills = 'skills'
+  const study = '自己学習'
+  const work = '業務経験'
+  const both = '業務経験 / 自己学習'
   const [displayedTab, setDisplayedTab] = useState(aboutme);
 
   const skillset = [
-    { id: "01", name: "HTML", exp: "both" },
-    { id: "02", name: "CSS", exp: "both" },
-    { id: "03", name: "JavaScript", exp: "both" },
-    { id: "04", name: "TypeScript", exp: "study" },
-    { id: "05", name: "React", exp: "study" },
-    { id: "06", name: "Material-UI", exp: "study"},
-    { id: "07", name: "Next.js", exp: "study" },
-    { id: "08", name: "Firebase", exp: "study" },
-    { id: "09", name: "Git / GitHub", exp: "study" },
-    { id: "10", name: "jQuery", exp: "both" },
-    { id: "11", name: "Linux", exp: "both" },
-    { id: "12", name: "SubVersion", exp: "work" }
+    { id: "01", name: "HTML", exp: both },
+    { id: "02", name: "CSS", exp: both },
+    { id: "03", name: "JavaScript", exp: both },
+    { id: "04", name: "TypeScript", exp: study },
+    { id: "05", name: "React", exp: study },
+    { id: "06", name: "Material-UI", exp: study },
+    { id: "07", name: "Next.js", exp: study },
+    { id: "08", name: "Firebase", exp: study },
+    { id: "09", name: "Git / GitHub", exp: study },
+    { id: "10", name: "jQuery", exp: both },
+    { id: "11", name: "Linux", exp: both },
+    { id: "12", name: "SubVersion", exp: work }
   ];
 
   const handleClickedTab = id => {
