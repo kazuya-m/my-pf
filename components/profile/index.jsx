@@ -1,6 +1,6 @@
 import styles from './index.module.css'
 import React, { useState } from 'react';
-import { SkillCard } from '../skillCard'
+import { IMG_PATH } from '../../constants';
 
 
 export function Profile() {
@@ -12,18 +12,18 @@ export function Profile() {
   const [displayedTab, setDisplayedTab] = useState(aboutme);
 
   const skillset = [
-    { id: "01", name: "HTML", exp: both },
-    { id: "02", name: "CSS", exp: both },
-    { id: "03", name: "JavaScript", exp: both },
-    { id: "04", name: "TypeScript", exp: study },
-    { id: "05", name: "React", exp: study },
-    { id: "06", name: "Material-UI", exp: study },
-    { id: "07", name: "Next.js", exp: study },
-    { id: "08", name: "Firebase", exp: study },
-    { id: "09", name: "Git / GitHub", exp: study },
-    { id: "10", name: "jQuery", exp: both },
-    { id: "11", name: "Linux", exp: both },
-    { id: "12", name: "SubVersion", exp: work }
+    { id: "01", name: "HTML", exp: both, imgPath: IMG_PATH.html },
+    { id: "02", name: "CSS", exp: both, imgPath: IMG_PATH.css },
+    { id: "03", name: "JavaScript", exp: both, imgPath: IMG_PATH.js },
+    { id: "04", name: "TypeScript", exp: study, imgPath: IMG_PATH.ts },
+    { id: "05", name: "React", exp: study, imgPath: IMG_PATH.react },
+    { id: "06", name: "Material-UI", exp: study, imgPath: IMG_PATH.material },
+    { id: "07", name: "Next.js", exp: study, imgPath: IMG_PATH.next },
+    { id: "08", name: "Firebase", exp: study, imgPath: IMG_PATH.firebase },
+    { id: "09", name: "Git / GitHub", exp: study, imgPath: IMG_PATH.git },
+    { id: "10", name: "jQuery", exp: both, imgPath: IMG_PATH.jq },
+    { id: "11", name: "Linux", exp: both, imgPath: IMG_PATH.linux },
+    { id: "12", name: "SubVersion", exp: work, imgPath: IMG_PATH.sv }
   ];
 
   const handleClickedTab = id => {
@@ -61,6 +61,7 @@ export function Profile() {
           <ul className={styles.skills__list}>
             {skillset.map((items) => (
               <li id={items.name} className={styles.skills__item}>
+                <img src={items.imgPath} className={styles.logo__skills}/>
                 <h3>{items.name}</h3>
                 <p>{items.exp}</p>
               </li>
