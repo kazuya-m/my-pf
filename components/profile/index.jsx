@@ -62,8 +62,8 @@ export function Profile() {
             {skillset.map((items) => (
               <li id={items.name} className={styles.skills__item}>
                 <img src={items.imgPath} className={styles.logo__skills}/>
-                <h3>{items.name}</h3>
-                <p>{items.exp}</p>
+                <h3 className={`fontLight`}>{items.name}</h3>
+                <p className={`fontLight lighterColor`}>{items.exp}</p>
               </li>
             )
           )}
