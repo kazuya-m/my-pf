@@ -1,7 +1,11 @@
 .fontLight {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .lighterColor {
   color: #696969;
+}
+
+.content {
+  margin-top: 2em;
 }
