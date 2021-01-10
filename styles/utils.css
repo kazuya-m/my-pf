@@ -9,3 +9,16 @@
 .content {
   margin-top: 2em;
 }
+
+.card {
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
+}
+
+.logo {
+  height: 1.5em;
+}
+
+.logoBigger {
+  height: 2em;
+}

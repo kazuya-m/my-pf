@@ -22,10 +22,6 @@ ul {
   box-sizing: border-box;
 }
 
-.logo {
-  height: 1.5em;
-}
-
 .main__wrapper {
   width: 100%;
   text-align: center;
