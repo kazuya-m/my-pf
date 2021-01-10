@@ -5,11 +5,11 @@ import styles from './index.module.css'
 export function Layout ({ children }) {
   return (
     <div className={styles.container}>
-      <Header />
       <div className={styles.main}>
+      <Header />
         {children}
-      </div>
       <Footer />
+      </div>
     </div>
   )
 }
