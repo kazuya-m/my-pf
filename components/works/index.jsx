@@ -1,5 +1,4 @@
 import styles from './index.module.css'
-import React, { useState } from 'react';
 import { WorksItem } from './worksItem'
 
 export function Works() {
