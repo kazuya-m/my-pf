@@ -40,6 +40,16 @@ export function Works() {
             "/works/chatbot/chatbot-skills.png",
             "/works/chatbot/chatbot.svg"
           ],
+          links: {
+            demo: {
+              label: "DEMO",
+              url: "https://portfolio-km.vercel.app/", 
+            },
+            github: {
+              label: "GitHub",
+              url: "https://github.com/kazuya-m/my-pf"
+            }
+          },
           langImg: {
             next: "/skills/nextjs.svg",
             react: "/skills/react.svg",
