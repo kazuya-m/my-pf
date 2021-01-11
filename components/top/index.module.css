@@ -4,7 +4,7 @@
   background-color: #dcdcdc;
   background-image: url("/topwrap.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-position: top;
   display: flex;
   justify-content: center;

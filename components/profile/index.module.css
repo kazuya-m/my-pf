@@ -17,10 +17,9 @@
 }
 
 .card__aboutme {
-  width: 80%;
+  width: 90%;
   background-color: #fff;
   border-radius: 1px;
-  width: 70%;
   box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
   padding: 1rem 0;
   display: flex;

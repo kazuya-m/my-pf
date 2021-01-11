@@ -12,7 +12,7 @@
 .works__item {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 50%;
 }
 .grid__lang {
   display: flex;
