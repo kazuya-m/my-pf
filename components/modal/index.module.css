@@ -14,48 +14,95 @@
 
 .content {
   position: fixed;
-  background-color: #fff;
   z-index: 20;
+  background-color: #fff;
   width: 90%;
+  max-width: 90%;
+  max-width: 1200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2em;
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-rows: 100px auto auto 100px;
   grid-template-areas:
     "title thumb"
     "description image"
+    "links image"
     "lang image";
+  overflow: scroll;
 }
 
+/* グリッド - タイトル */
 .title {
   grid-area: title;
 }
 
+/* グリッド - サムネイル */
 .thumb {
   grid-area: thumb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.thumbImages {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  object-position: 50% 50%; /* 中央 */
+  overflow: hidden;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+/* グリッド - 説明 */
 .description {
   grid-area: description;
-}
-
-.image {
-  grid-area: image;
-}
-
-.lang {
-  grid-area: lang;
 }
 
 .description__line {
   text-align: left;
 }
 
-.thumbImages {
-  width: 200px;
+/* グリッド - メイン表示画像 */
+.image {
+  grid-area: image;
+}
+
+.mainImage {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  object-position: 50% 50%; /* 中央 */
+  overflow: hidden;
+}
+
+/* グリッド - リンク */
+.links {
+  grid-area: links;
+}
+
+.links__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: left;
+}
+
+.links__item {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.links__list a {
+  color: #0070f3;
+}
+
+/* グリッド - 使用技術 */
+.lang {
+  grid-area: lang;
 }
 
 .lang__list {
@@ -63,5 +110,5 @@
 }
 
 .langImages {
-  width: auto;
+  margin-right: 1.5rem;
 }

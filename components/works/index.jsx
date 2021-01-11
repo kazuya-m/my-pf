@@ -1,6 +1,5 @@
 import styles from './index.module.css'
 import React, { useState } from 'react';
-import { Modal } from '../modal'
 import { WorksItem } from './worksItem'
 
 export function Works() {
@@ -9,8 +8,22 @@ export function Works() {
     { id: "01",
       content: {
         title: "チャットボット",
-        description: "自己紹介をするチャットボットです。\n質問を選択していくと回答が表示され、対応した新たな質問が表示されます。\n私の経歴書やプロフィールなどの情報を提供できるようにしました。\nReact、Material-UI、Firebaseを使用していて、Firebaseでは複数のサービスを組み込みました。",
-        thumb: { main: worksCs },
+        description: "自己紹介をするチャットボットです。\n質問を選択していくと回答が表示され、対応した新たな質問が表示されます。\n私の経歴書やプロフィール、チャットボットに使われている技術などの情報が得られます。\nReact、Material-UI、Firebaseを使用していて、Firebaseでは複数のサービスを組み込みました。",
+        thumb: [ 
+          "/works/chatbot/chatbot-chats.png",
+          "/works/chatbot/chatbot-skills.png",
+          "/works/chatbot/chatbot.svg"
+        ],
+        links: {
+          demo: {
+            label: "DEMO",
+            url: "https://chat-bot-c069a.web.app/", 
+          },
+          github: {
+            label: "GitHub",
+            url: "https://github.com/kazuya-m/chatbot"
+          }
+        },
         langImg: {
           react: "/skills/react.svg",
           material: "/skills/material-ui.svg",
@@ -22,7 +35,11 @@ export function Works() {
         content: {
           title: "LP",
           description: "このサイトです。\nNext.jsを学び始めたため最初のアウトプットとしてLP風のサイトを作成しました。SSGされているため最初の表示やContactページへの遷移が高速です。",
-          thumb: { main: worksCs },
+          thumb: [ 
+            worksCs,
+            "/works/chatbot/chatbot-skills.png",
+            "/works/chatbot/chatbot.svg"
+          ],
           langImg: {
             next: "/skills/nextjs.svg",
             react: "/skills/react.svg",

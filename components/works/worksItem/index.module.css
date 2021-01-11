@@ -1,3 +1,12 @@
-.itemImages {
+.items__list {
+  padding: 20px 30px;
+}
+
+.items__image {
+  object-fit: contain;
+  overflow: hidden;
   width: 400px;
+  height: 400px;
+  object-position: 50% 50%; /* 中央 */
+  cursor: pointer;
 }

@@ -14,11 +14,11 @@ export function WorksItem(props) {
   },[modalOpen]);
 
   return (
-    <div>
+    <div className={`card ${styles.items__list}`}>
       <img
-        className={styles.itemImages}
-        src={props.content.thumb.main}
-        alt="coming soon"
+        className={styles.items__image}
+        src={props.content.thumb[0]}
+        alt={props.content.title}
         onClick={()=>handleClickedModalOpen()}
       />
       <h3 className={`fontLight lighterColor`}>{props.content.title}</h3>

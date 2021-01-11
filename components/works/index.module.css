@@ -1,3 +1,7 @@
+.wrapper {
+  margin-bottom: 5rem;
+}
+
 .works__list {
   display: flex;
   flex-wrap: wrap;
