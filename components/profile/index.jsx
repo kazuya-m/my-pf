@@ -28,10 +28,6 @@ export function Profile() {
 
   const handleClickedTab = id => {
     setDisplayedTab(id);
-  //   switch (id) {
-  //     case aboutme:
-
-  //   }
   }
 
   return (
@@ -39,8 +35,8 @@ export function Profile() {
       <h2>Profile</h2>
       <div className={`content`}>
         <ul className={styles.profile__list}>
-          <li className={styles.profile__item} onClick={() => handleClickedTab(aboutme)}>About Me</li>
-          <li className={styles.profile__item} onClick={() => handleClickedTab(skills)}>SKills</li>
+          <li className={styles.profile__items} onClick={() => handleClickedTab(aboutme)}>About Me</li>
+          <li className={styles.profile__items} onClick={() => handleClickedTab(skills)}>SKills</li>
         </ul>
         <div className={styles.content__wrapper}>
           {displayedTab === aboutme ? (
