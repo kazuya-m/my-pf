@@ -21,7 +21,7 @@ export function WorksItem(props) {
         alt={props.content.title}
         onClick={()=>handleClickedModalOpen()}
       />
-      <h3 className={`fontLight lighterColor`}>{props.content.title}</h3>
+      <h3 className={`lighterColor`}>{props.content.title}</h3>
       {modalOpen &&
         <Modal
           content={props.content}
