@@ -33,3 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 my-pf.code-workspace
+next.config.js
