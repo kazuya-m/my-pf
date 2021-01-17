@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './index.module.css'
 import React, { useState, useCallback } from 'react';
 import { Modal } from '../../modal'
@@ -15,10 +16,12 @@ export function WorksItem(props) {
 
   return (
     <div className={`card ${styles.items__list}`}>
-      <img
+      <Image
         className={styles.items__image}
         src={props.content.thumb[0]}
         alt={props.content.title}
+        width={400}
+        height={400}
         onClick={()=>handleClickedModalOpen()}
       />
       <h3 className={`lighterColor`}>{props.content.title}</h3>

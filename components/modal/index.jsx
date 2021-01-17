@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from "react"
 import styles from "./index.module.css"
 
@@ -14,11 +15,13 @@ export function Modal(props) {
           </div>
           <div className={styles.thumb}>
             {props.content.thumb.map((img, index) => (
-              <img
+              <Image
                 key={index.toString()}
                 className={styles.thumbImages}
                 src={img}
                 alt="images"
+                width={75}
+                height={75}
                 onClick={()=>setDisplayedImageIndex(index)}
               />
             ))}
@@ -31,10 +34,12 @@ export function Modal(props) {
             ))}
           </div>
           <div className={styles.image}>
-            <img
+            <Image
               className={styles.mainImage}
               src={props.content.thumb[displayedImageIndex]}
               alt="img"
+              width={500}
+              height={500}
             />
           </div>
           <div className={styles.links}>
@@ -52,14 +57,20 @@ export function Modal(props) {
           </div>
           <div className={styles.grid__lang}>
             <h3 className={`lighterColor`}>使用技術など</h3>
+            <ul className={styles.lang__list}>
               {Object.keys(props.content.langImg).map((key) => (
-                <img
-                  key={key}
-                  className={`logoBigger ${styles.langImages}`}
-                  src={props.content.langImg[key]}
-                  alt={key}
-                />
+                <li className={`${styles.lang__items}`} key={key}>
+                  <Image
+                    key={key}
+                    className={`logoBigger ${styles.langImages}`}
+                    src={props.content.langImg[key]}
+                    alt={key}
+                    width={40}
+                    height={40}
+                  />
+                </li>
               ))}
+            </ul>
           </div>
       </div>
     </>

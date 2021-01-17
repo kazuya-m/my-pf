@@ -1,5 +1,6 @@
 import styles from './index.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Header() {
   return(
@@ -20,7 +21,7 @@ export function Header() {
             </li>
           <li className={styles.menu__item}>
             <a href="https://github.com/kazuya-m" target="_blank" rel="noopener noreferrer">
-              <img src="/skills/github.svg" alt="GitHub Logo" className="logo" />
+              <Image src="/skills/github.svg" alt="GitHub Logo" width={30} height={30} />
             </a>
           </li>
         </ul>

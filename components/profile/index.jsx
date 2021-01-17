@@ -1,6 +1,7 @@
 import styles from './index.module.css'
 import React, { useState } from 'react';
 import { IMG_PATH } from '../../constants';
+import Image from 'next/image'
 
 
 export function Profile() {
@@ -62,7 +63,7 @@ export function Profile() {
             <ul className={styles.skills__list}>
               {skillset.map((items) => (
                 <li id={items.name} className={styles.skills__item}>
-                  <img src={items.imgPath} className={styles.logo__skills}/>
+                  <Image src={items.imgPath} width={60} height={60} />
                   <h3 className={`fontLight`}>{items.name}</h3>
                   <p className={`fontLight lighterColor`}>{items.exp}</p>
                 </li>

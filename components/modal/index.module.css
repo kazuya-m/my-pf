@@ -48,8 +48,6 @@
 }
 
 .thumbImages {
-  width: 75px;
-  height: 75px;
   object-fit: contain;
   object-position: 50% 50%; /* 中央 */
   overflow: hidden;
@@ -107,8 +105,5 @@
 
 .lang__list {
   display: flex;
-}
-
-.langImages {
-  margin-right: 1.5rem;
+  justify-content: space-evenly;
 }
