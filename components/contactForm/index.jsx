@@ -18,19 +18,57 @@ export function ContactForm() {
     setText(e.target.value);
   }
 
-  const handleSubmit = () => {
-    event.preventDefault();
-    alert(`submitted:${name}--${email}--${text}--!`);
-    setName("");
-    setEmail("");
-    setText("");
+  const validateEmailFormat = (email) => {
+    const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    return regex.test(email);
   }
+
+
+  const validateBlank = (...args) => {
+    let isBlank = false;
+    for (let i = 0; i < args.length; i=(i+1)|0) {
+        if (args[i] === "") {
+            isBlank = true;
+        }
+    }
+    return isBlank;
+};
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const isBlank = validateBlank(name, email, text);
+    const isEmailValidated = validateEmailFormat(email);
+    
+    if (isBlank) {
+      alert('必須入力欄が空白です。');
+      return false;
+    } else if (!isEmailValidated) {
+      alert('メールアドレスの書式が異なります。');
+      return false;
+    } else {
+      const payload = {
+        text: 'お問い合わせがありました\n'
+            + '【お名前】: ' + name + '\n'
+            + '【メールアドレス】: ' + email + '\n'
+            + '【問い合わせ内容】\n' + text
+      };
+      fetch(process.env.SLACK_WEBHOOK_URL, {
+        method: 'POST',
+        body: JSON.stringify(payload)
+      }).then(() => {
+        alert('送信が完了しました');
+        setName("");
+        setEmail("");
+        setText("");
+    })
+  }
+}
 
   return (
     <div className={styles.wrapper}>
       <h2>Contact</h2>
       <div className={styles.form__container}>
-        <form onSubmit={()=>handleSubmit()}>
+        <form onSubmit={(e)=>handleSubmit(e)}>
           <div className={`${styles.form__item} ${styles.form__name}`}>
             <input
               name="name"
