@@ -35,7 +35,7 @@ export function Works() {
           title: "LP",
           description: "このサイトです。\nNext.jsを学び始めたため最初のアウトプットとしてLP風のサイトを作成しました。SSGされているため最初の表示やContactページへの遷移が高速です。",
           thumb: [ 
-            worksCs,
+            "/works/pf/lp_top.png",
             "/works/chatbot/chatbot-skills.png",
             "/works/chatbot/chatbot.svg"
           ],
