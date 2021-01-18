@@ -5,11 +5,11 @@ import Image from 'next/image'
 export function Header() {
   return(
     <header className={styles.header}>
-      {/* <div className="header-left"> */}
+      <div className="header-left">
         <Link href="/">
           <a><h1 className={styles.title}>Kazuya Matsuo</h1></a>
         </Link>
-      {/* </div> */}
+      </div>
       <div className={styles.header__menu}>
         <ul className={styles.menu__list}>
           <li className={styles.menu__item}>
