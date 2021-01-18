@@ -3,9 +3,9 @@
 }
 
 .items__image {
-  object-fit: contain;
+  object-fit: scale-down;
   overflow: hidden;
-  object-position: 50% 50%; /* 中央 */
+  object-position: 50% 0%; /* 中央 */
   cursor: pointer;
   transition: 0.5s all;
 }
