@@ -33,7 +33,7 @@ export function Profile() {
 
   return (
     <div className={styles.wrapper}>
-      <h2>Profile</h2>
+      <h1 className={`contentTitle`}>PROFILE</h1>
       <div className={`content`}>
         <ul className={styles.profile__list}>
           <li className={styles.profile__items}>
@@ -47,15 +47,15 @@ export function Profile() {
           {displayedTab === aboutme ? (
             <div className={styles.card__aboutme}>
               <div className={styles.item__profileImage}>
-                image
+                <Image src="/profile_277_300.jpg" alt="profile" width={130} height={130} className={styles.item__image} />
               </div>
               <div className={styles.item__description}>
-              <p>こんにちは。マツオ カズヤと申します。<br />
-                  4年目の29歳です。<br />
-                  主にテスト案件を担当していましたが、2020年からは開発・改修に携わる案件に参画しています。<br />
-                  自己学習はモダンフロントエンドを中心に行っており、<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">フロントエンドロードマップ <i className="fas fa-external-link-alt"></i></a> を参考にしています。<br />
-                  React / Next.js / Firebase / JavaScript / TypeScript<br />
-                  他の成果物もこのサイトやgithub上で公開しています。
+                <p>こんにちは。マツオ カズヤと申します。<br />
+                    これまでの業務では、主にフロントエンド(JavaScript)周りを担当してきました。<br />
+                    また、以前行っていたテスト業務ではリーダー経験もあるため、PJ全体を考慮した業務遂行が可能です。<br />
+                    自己学習・個人開発はモダンフロントエンドを中心に行っており、<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">フロントエンドロードマップ</a>を参考に進めています。<br />
+                    現在は React / Next.js / Firebase / Material-UI / TypeScript などで制作物を作成しており、
+                    その内容については、このサイト上や<a href="https://roadmap.sh/frontend" target="_blank" rel="noopener noreferrer">GitHub</a>で公開しています。
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ export function Profile() {
               {skillset.map((items) => (
                 <li id={items.name} className={styles.skills__item}>
                   <Image src={items.imgPath} width={60} height={60} />
-                  <h3 className={`fontLight`}>{items.name}</h3>
+                  <h2 className={`fontLight`}>{items.name}</h2>
                   <p className={`fontLight lighterColor`}>{items.exp}</p>
                 </li>
               )
