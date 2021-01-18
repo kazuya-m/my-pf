@@ -62,7 +62,7 @@ export function Works() {
 
   return (
     <div className={`main__wrapper ${styles.wrapper}`}>
-      <h2>Works</h2>
+      <h1 className={`contentTitle`}>WORKS</h1>
       <div className={`content`}>
         <ul className={styles.works__list}>
           {worksList.map(({id, content}) => (

@@ -22,3 +22,7 @@
 .logoBigger {
   height: 2em;
 }
+
+.contentTitle {
+  letter-spacing: 0.5rem;
+}

@@ -15,7 +15,7 @@ export function WorksItem(props) {
   },[modalOpen]);
 
   return (
-    <div className={`card ${styles.items__list}`}>
+    <div className={` ${styles.items__list}`}>
       <Image
         className={styles.items__image}
         src={props.content.thumb[0]}
@@ -24,7 +24,7 @@ export function WorksItem(props) {
         height={400}
         onClick={()=>handleClickedModalOpen()}
       />
-      <h3 className={`lighterColor`}>{props.content.title}</h3>
+      <h2 className={`lighterColor`}>{props.content.title}</h2>
       {modalOpen &&
         <Modal
           content={props.content}

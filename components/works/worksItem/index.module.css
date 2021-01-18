@@ -7,4 +7,11 @@
   overflow: hidden;
   object-position: 50% 50%; /* 中央 */
   cursor: pointer;
+  transition: 0.5s all;
+}
+
+.items__image:hover {
+  transform: scale(1.05, 1.05);
+  transition: 0.5s all;
+  box-shadow: 1px;
 }

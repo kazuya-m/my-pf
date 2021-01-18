@@ -7,8 +7,6 @@
 
 .wrapper form {
   display: block;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
   width: 100%;
 }
 
@@ -21,7 +19,7 @@
 }
 
 .form__item {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form__item input {

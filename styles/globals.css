@@ -11,6 +11,14 @@ a {
   text-decoration: none;
   display: inline;
   cursor: pointer;
+  border-bottom: 1.5px dotted #000;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #696969;
+  border-bottom: 1.5px dotted #696969;
+  transition: all 0.3s;
 }
 
 ul {
@@ -69,6 +77,8 @@ button {
   border: #000 1.5px solid;
   font-weight: 550;
   letter-spacing: 0.5em;
+  transition: all 0.4s;
+  outline: none;
 }
 
 button:hover {
@@ -76,4 +86,13 @@ button:hover {
   color: #000;
   cursor: pointer;
   transition: all 0.4s;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
 }

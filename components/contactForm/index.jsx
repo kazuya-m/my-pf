@@ -66,7 +66,7 @@ export function ContactForm() {
 
   return (
     <div className={styles.wrapper}>
-      <h2>Contact</h2>
+      <h1 className={`contentTitle`}>CONTACT</h1>
       <div className={styles.form__container}>
         <form onSubmit={(e)=>handleSubmit(e)}>
           <div className={`${styles.form__item} ${styles.form__name}`}>

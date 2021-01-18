@@ -11,7 +11,7 @@ export function Modal(props) {
       </div>
         <div className={`${styles.content} card`}>
           <div className={styles.title}>
-            <h2 className={`lighterColor`}>{props.content.title}</h2>
+            <h2>{props.content.title}</h2>
           </div>
           <div className={styles.thumb}>
             {props.content.thumb.map((img, index) => (
@@ -43,9 +43,9 @@ export function Modal(props) {
             />
           </div>
           <div className={styles.links}>
-            <h3 className={`lighterColor`}>LINKS</h3>
+            <h2>LINKS</h2>
             <ul className={styles.links__list}>
-              {Object.keys(props.content.links).map((key, ind, arr) => (
+              {Object.keys(props.content.links).map((key) => (
                 <li key={key} className={styles.links__item}>
                   <span>- </span>
                   <a href={props.content.links[key].url} target="_blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ export function Modal(props) {
             </ul>
           </div>
           <div className={styles.grid__lang}>
-            <h3 className={`lighterColor`}>使用技術など</h3>
+            <h2>使用技術など</h2>
             <ul className={styles.lang__list}>
               {Object.keys(props.content.langImg).map((key) => (
                 <li className={`${styles.lang__items}`} key={key}>

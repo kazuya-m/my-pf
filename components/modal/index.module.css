@@ -94,10 +94,6 @@
   margin-bottom: 0.5rem;
 }
 
-.links__list a {
-  color: #0070f3;
-}
-
 /* グリッド - 使用技術 */
 .lang {
   grid-area: lang;
