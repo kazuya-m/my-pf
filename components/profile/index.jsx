@@ -45,7 +45,7 @@ export function Profile() {
         </ul>
         <div className={styles.content__wrapper}>
           {displayedTab === aboutme ? (
-            <div className={styles.card__aboutme}>
+            <div className={`card ${styles.card__aboutme}`}>
               <div className={styles.item__profileImage}>
                 <Image src="/profile_277_300.jpg" alt="profile" width={130} height={130} className={styles.item__image} />
               </div>
@@ -62,7 +62,7 @@ export function Profile() {
           ) : (
             <ul className={styles.skills__list}>
               {skillset.map((items) => (
-                <li id={items.name} className={styles.skills__item}>
+                <li id={items.name} className={`card ${styles.skills__item}`}>
                   <Image src={items.imgPath} width={60} height={60} />
                   <h2 className={`fontLight`}>{items.name}</h2>
                   <p className={`fontLight lighterColor`}>{items.exp}</p>

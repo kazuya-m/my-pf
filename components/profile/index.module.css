@@ -23,9 +23,7 @@
 
 .card__aboutme {
   width: 90%;
-  background-color: #fff;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
+
   padding: 1rem 0;
   display: flex;
   justify-content: space-evenly;
@@ -64,9 +62,6 @@
 
 .skills__item {
   width: 20%;
-  background-color: #fff;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(80, 80, 80, 0.7);
   margin: 0 1em 2em 0;
   padding: 1.5em 0;
 }
